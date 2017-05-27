@@ -8,7 +8,28 @@
  */
 module.exports = function( ceiling ) {
   // do work here
+  var count = 0;
+  var newArr = [];
+  var quotient = 0;
+  var loop = 1;
+  var j;
 
+  for (var i = 1; i <= ceiling; i++) {
+    newArr.push(i);
+  }
 
-  return 0;
+  newArr.sort();
+
+  do {
+    quotient = newArr[0] * loop * newArr[1];
+    for (j = 2; j < newArr.length; j++) {
+      if (quotient % newArr[j] !== 0) {
+        break;
+      }
+    }
+    loop++;
+  } while (j !== newArr.length);
+
+  return quotient;
 };
+
