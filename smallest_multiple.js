@@ -8,7 +8,6 @@
  */
 module.exports = function( ceiling ) {
   // do work here
-  var count = 0;
   var newArr = [];
   var quotient = 0;
   var loop = 1;
