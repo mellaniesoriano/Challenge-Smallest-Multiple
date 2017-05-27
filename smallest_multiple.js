@@ -12,7 +12,7 @@ module.exports = function( ceiling ) {
   var newArr = [];
   var quotient = 0;
   var loop = 1;
-  var j;
+  var j = 0;
 
   for (var i = 1; i <= ceiling; i++) {
     newArr.push(i);
